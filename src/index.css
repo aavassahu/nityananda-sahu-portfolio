@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FBFBF9;
+    color: #21211F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #21211F;
+    background-color: #FBFBF9;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #A65B32;
+    color: #FFFFFF;
+  }
+
+  /* Custom subtle museum scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F7F5F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D5CEBE;
+    border-radius: 9999px;
+    border: 2px solid #F7F5F0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A65B32;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
